@@ -82,7 +82,7 @@ contract("HegicETHPool", ([user1, user2, user3]) => {
     )
   })
 
-  it("Should burn the first provider's tokens correctly", async () => {
+  it("Should burn the first provider's tokens correctly [ @skip-on-coverage ]", async () => {
     const {ETHPool} = await contracts
     const value = firstWithdraw
     const startBalance = await web3.eth.getBalance(user1).then((x) => new BN(x))
