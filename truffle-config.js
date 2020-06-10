@@ -48,6 +48,7 @@ module.exports = {
 
   // Set default mocha options here, use special reporters etc.
   mocha: {slow: 10000},
+  plugins: ["solidity-coverage"],
 
   // Configure your compilers
   compilers: {

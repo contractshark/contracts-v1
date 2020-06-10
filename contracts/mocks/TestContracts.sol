@@ -18,7 +18,7 @@
  */
 
 pragma solidity ^0.6.8;
-import "../contracts/Interfaces.sol";
+import "./../Interfaces.sol";
 
 
 contract FakeExchange {
