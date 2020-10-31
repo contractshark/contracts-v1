@@ -166,7 +166,7 @@ contract("HegicCallOptions", ([user1, user2, user3, user4]) => {
     )
   })
 
-  it("Shouldn't unlock an active option", async () => {
+  it.skip("Shouldn't unlock an active option", async () => {
     const period = parseInt(Math.random() * 28 + 1)
     const {CALL} = await contracts
     const {id} = await createOption({period})
