@@ -8,7 +8,7 @@
   },
   "scripts": {
     "ganache": "ganache-cli",
-    "coverage": "truffle run coverage --network development",
+    "coverage": "node --max-old-space-size=4096 ./node_modules/.bin/truffle run coverage --network development",
     "test": "truffle test",
     "lint": "prettier './**/*.js' './**/*.sol' './**/*.md' --write",
     "flat": "truffle-flattener test/Import.flat > build/flat.sol"
@@ -25,7 +25,7 @@
     "prettier": "^2.0.5",
     "prettier-plugin-solidity": "^1.0.0-alpha.53",
     "solidity-coverage": "^0.7.5",
-    "truffle": "^5.1.28",
+    "truffle": "5.1.46",
     "truffle-flattener": "^1.4.4"
   },
   "dependencies": {
